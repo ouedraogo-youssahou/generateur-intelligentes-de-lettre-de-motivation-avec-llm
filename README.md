@@ -12,6 +12,10 @@ Une application JavaFX moderne pour générer des lettres de motivation intellig
 - **Copie Presse-papiers** : Copiez facilement le texte généré
 - **Gestion des Conversations** : Nouvelle conversation, historique, etc.
 
+## 🎥 Vidéo Démo
+
+Découvrez comment utiliser l'application en regardant la démonstration complète : [Vidéo Démo](https://github.com/ouedraogo-youssahou/generateur-intelligentes-de-lettre-de-motivation-avec-llm/releases/tag/V1)
+
 ## 🚀 Installation
 
 ### Prérequis
