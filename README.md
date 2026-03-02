@@ -266,4 +266,3 @@ Pour toute question ou problème :
 
 ---
 
-**✨ Bonne chance dans votre recherche d'emploi !**
