@@ -1,0 +1,209 @@
+/* === Thème général === */
+.root-pane {
+    -fx-background-color: #f5f6fa;
+}
+
+/* === Header === */
+.header-box {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #e0e0e0;
+    -fx-border-width: 0 0 1 0;
+}
+
+.app-title {
+    -fx-text-fill: #2c3e50;
+    -fx-font-weight: bold;
+}
+
+.label-text {
+    -fx-text-fill: #555555;
+    -fx-font-size: 13px;
+}
+
+.api-key-input {
+    -fx-background-color: #f8f9fa;
+    -fx-border-color: #ced4da;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-padding: 6 10;
+    -fx-font-size: 12px;
+}
+
+.api-status {
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+}
+
+/* === Panneaux === */
+.chat-panel, .preview-panel {
+    -fx-background-color: #ffffff;
+}
+
+.panel-title {
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #34495e;
+}
+
+/* === Zone de chat === */
+.chat-scroll {
+    -fx-background: #f8f9fa;
+    -fx-background-color: #f8f9fa;
+    -fx-border-color: transparent;
+}
+
+.chat-scroll .viewport {
+    -fx-background-color: #f8f9fa;
+}
+
+.chat-messages-box {
+    -fx-background-color: #f8f9fa;
+}
+
+/* === Bulles de messages === */
+.user-message {
+    -fx-background-color: #3498db;
+    -fx-text-fill: white;
+    -fx-padding: 10 15;
+    -fx-background-radius: 18 18 4 18;
+    -fx-font-size: 13px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 3, 0, 0, 1);
+}
+
+.bot-message {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #2c3e50;
+    -fx-padding: 10 15;
+    -fx-background-radius: 18 18 18 4;
+    -fx-font-size: 13px;
+    -fx-border-color: #e8e8e8;
+    -fx-border-radius: 18 18 18 4;
+    -fx-border-width: 1;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.05), 2, 0, 0, 1);
+}
+
+.error-message {
+    -fx-background-color: #ffeaea;
+    -fx-text-fill: #e74c3c;
+    -fx-padding: 8 12;
+    -fx-background-radius: 10;
+    -fx-font-size: 12px;
+    -fx-border-color: #f5c6cb;
+    -fx-border-radius: 10;
+}
+
+/* === Barre de saisie === */
+.input-bar {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #e0e0e0;
+    -fx-border-width: 1 0 0 0;
+}
+
+.message-input {
+    -fx-background-color: #f1f3f5;
+    -fx-border-color: #dee2e6;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+    -fx-padding: 8 15;
+    -fx-font-size: 13px;
+}
+
+.message-input:focused {
+    -fx-border-color: #3498db;
+    -fx-background-color: #ffffff;
+}
+
+/* === Prévisualisation lettre === */
+.letter-preview {
+    -fx-font-family: "Georgia", "Times New Roman", serif;
+    -fx-font-size: 13px;
+    -fx-background-color: #fffef5;
+    -fx-border-color: #e8e5d0;
+    -fx-border-width: 1;
+    -fx-padding: 15;
+}
+
+.letter-preview:focused {
+    -fx-border-color: #d4af37;
+}
+
+/* === Barre d'actions === */
+.action-bar {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #e0e0e0;
+    -fx-border-width: 1 0 0 0;
+}
+
+/* === Boutons === */
+.btn-primary {
+    -fx-background-color: #3498db;
+    -fx-text-fill: white;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-padding: 8 16;
+    -fx-background-radius: 6;
+    -fx-cursor: hand;
+}
+
+.btn-primary:hover {
+    -fx-background-color: #2980b9;
+}
+
+.btn-primary:disabled {
+    -fx-background-color: #bdc3c7;
+    -fx-text-fill: #ecf0f1;
+}
+
+.btn-secondary {
+    -fx-background-color: #ecf0f1;
+    -fx-text-fill: #2c3e50;
+    -fx-font-size: 13px;
+    -fx-padding: 8 16;
+    -fx-background-radius: 6;
+    -fx-border-color: #bdc3c7;
+    -fx-border-radius: 6;
+    -fx-cursor: hand;
+}
+
+.btn-secondary:hover {
+    -fx-background-color: #d5dbdb;
+}
+
+.btn-secondary:disabled {
+    -fx-background-color: #f5f5f5;
+    -fx-text-fill: #bdc3c7;
+    -fx-border-color: #e0e0e0;
+}
+
+.btn-danger {
+    -fx-background-color: #e74c3c;
+    -fx-text-fill: white;
+    -fx-font-size: 13px;
+    -fx-padding: 8 16;
+    -fx-background-radius: 6;
+    -fx-cursor: hand;
+}
+
+.btn-danger:hover {
+    -fx-background-color: #c0392b;
+}
+
+/* === SplitPane === */
+.main-split > .split-pane-divider {
+    -fx-background-color: #e0e0e0;
+    -fx-padding: 0 1 0 1;
+}
+
+/* === Scrollbar === */
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #c0c0c0;
+    -fx-background-radius: 5;
+}
+
+.scroll-bar:vertical .thumb:hover {
+    -fx-background-color: #a0a0a0;
+}
+
+.scroll-bar:vertical .track {
+    -fx-background-color: transparent;
+}

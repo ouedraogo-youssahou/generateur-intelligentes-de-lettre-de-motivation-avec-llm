@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.coverletter.controller.ChatController"
+            prefWidth="900" prefHeight="700"
+            styleClass="root-pane">
+
+    <!-- Header avec titre et config API -->
+    <top>
+        <VBox spacing="8" styleClass="header-box">
+            <padding><Insets top="15" right="20" bottom="10" left="20"/></padding>
+
+            <Label text="Générateur de Lettres de Motivation" styleClass="app-title">
+                <font><Font size="22"/></font>
+            </Label>
+
+            <HBox spacing="10" alignment="CENTER_LEFT">
+                <Label text="Clé API Groq :" styleClass="label-text"/>
+                <TextField fx:id="apiKeyField" promptText="Entrez votre clé API Groq (gsk_...)"
+                           prefWidth="350" styleClass="api-key-input"/>
+                <Button fx:id="saveApiKeyButton" text="Sauvegarder" styleClass="btn-secondary"/>
+                <Label fx:id="apiKeyStatus" text="" styleClass="api-status"/>
+            </HBox>
+
+            <Separator/>
+        </VBox>
+    </top>
+
+    <!-- Contenu principal : Chat + Prévisualisation -->
+    <center>
+        <SplitPane dividerPositions="0.55" styleClass="main-split">
+
+            <!-- Panneau Chat -->
+            <VBox spacing="0" styleClass="chat-panel">
+                <Label text="Chat" styleClass="panel-title">
+                    <VBox.margin><Insets top="10" left="15" bottom="5"/></VBox.margin>
+                </Label>
+
+                <ScrollPane fx:id="chatScrollPane" fitToWidth="true" VBox.vgrow="ALWAYS"
+                            styleClass="chat-scroll">
+                    <VBox fx:id="chatMessages" spacing="5" styleClass="chat-messages-box">
+                        <padding><Insets top="10" right="5" bottom="10" left="5"/></padding>
+                    </VBox>
+                </ScrollPane>
+
+                <!-- Barre de saisie -->
+                <HBox spacing="10" alignment="CENTER" styleClass="input-bar">
+                    <padding><Insets top="10" right="15" bottom="10" left="15"/></padding>
+                    <TextField fx:id="messageInput" promptText="Tapez votre message..."
+                               HBox.hgrow="ALWAYS" styleClass="message-input"/>
+                    <Button fx:id="sendButton" text="Envoyer" styleClass="btn-primary" prefWidth="100"/>
+                </HBox>
+            </VBox>
+
+            <!-- Panneau Prévisualisation lettre -->
+            <VBox spacing="0" styleClass="preview-panel">
+                <Label text="Lettre de Motivation" styleClass="panel-title">
+                    <VBox.margin><Insets top="10" left="15" bottom="5"/></VBox.margin>
+                </Label>
+
+                <TextArea fx:id="letterPreview" wrapText="true" VBox.vgrow="ALWAYS"
+                          promptText="La lettre de motivation générée apparaîtra ici..."
+                          styleClass="letter-preview"/>
+
+                <!-- Boutons d'action -->
+                <HBox spacing="8" alignment="CENTER" styleClass="action-bar">
+                    <padding><Insets top="10" right="15" bottom="10" left="15"/></padding>
+                    <Button fx:id="generateButton" text="Générer la lettre"
+                            styleClass="btn-primary" prefWidth="140"/>
+                    <Button fx:id="downloadPdfButton" text="Télécharger PDF"
+                            styleClass="btn-primary" prefWidth="130"/>
+                    <Button fx:id="printButton" text="Imprimer"
+                            styleClass="btn-secondary" prefWidth="90"/>
+                    <Button fx:id="copyButton" text="Copier"
+                            styleClass="btn-secondary" prefWidth="80"/>
+                    <Button fx:id="newChatButton" text="Nouveau chat"
+                            styleClass="btn-danger" prefWidth="120"/>
+                </HBox>
+            </VBox>
+        </SplitPane>
+    </center>
+</BorderPane>
