@@ -16,7 +16,7 @@ Une application JavaFX moderne pour générer des lettres de motivation intellig
 
 Découvrez comment utiliser l'application en regardant la démonstration complète : [Télécharger la Vidéo Démo](## 📺 Démonstration de l'application
 
-[![Regarder la démo](https://img.youtube.com/vi/VWx1WLWIt7w/maxresdefault.jpg)](https://youtu.be/VWx1WLWIt7w)
+[![Regarder la démo](https://img.youtube.com/vi/Tx76crKY06E/maxresdefault.jpg)](https://youtu.be/Tx76crKY06E)
 
 
 ## 🚀 Installation
